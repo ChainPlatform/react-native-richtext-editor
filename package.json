@@ -1,0 +1,47 @@
+{
+  "name": "@chainplatform/rich",
+  "version": "0.0.1",
+  "description": "Reusable BBCode rich text editor for React Native and React Native Web.",
+  "main": "index.js",
+  "module": "index.js",
+  "react-native": "index.js",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "react-native",
+    "react-native-web",
+    "rich-text",
+    "rich-text-editor",
+    "bbcode",
+    "bbcode-editor",
+    "text-editor",
+    "wysiwyg",
+    "chainplatform",
+    "@chainplatform/rich"
+  ],
+  "peerDependencies": {
+    "@chainplatform/layout": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-svg": "*"
+  },
+  "devDependencies": {
+    "@chainplatform/layout": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-svg": "*"
+  },
+  "author": "Chain Platform <santran686@gmail.com> (https://chainplatform.net/)",
+  "license": "MIT",
+  "homepage": "https://github.com/ChainPlatform/react-native-richtext-editor",
+  "bugs": {
+    "url": "https://github.com/ChainPlatform/react-native-richtext-editor/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChainPlatform/react-native-richtext-editor.git"
+  }
+}
