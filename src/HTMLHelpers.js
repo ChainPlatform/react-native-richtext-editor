@@ -249,11 +249,9 @@ export function getHTMLContent(content) {
     html = html.replace(/\[color=(.*?)\]([\s\S]*?)\[\/color\]/gi, (_match, color, value) => `<span style="color:${safeColor(color)};">${value}</span>`);
     html = html.replace(/\[size=(.*?)\]([\s\S]*?)\[\/size\]/gi, (_match, size, value) => `<span style="font-size:${safeSize(size)}px;">${value}</span>`);
     html = html.replace(/\[font=(.*?)\]([\s\S]*?)\[\/font\]/gi, (_match, font, value) => `<span style="font-family:${safeFont(font)}, sans-serif;">${value}</span>`);
-    html = html.replace(/\[h1\]([\s\S]*?)\[\/h1\]/gi, `<h1 style="font-size:${setSize(22)}px;margin:${setSize(8)}px 0;font-weight:600;">$1</h1>`);
-    html = html.replace(/\[h2\]([\s\S]*?)\[\/h2\]/gi, `<h2 style="font-size:${setSize(18)}px;margin:${setSize(8)}px 0 ${setSize(6)}px;font-weight:600;">$1</h2>`);
-    html = html.replace(/\[h3\]([\s\S]*?)\[\/h3\]/gi, `<h3 style="font-size:${setSize(16)}px;margin:${setSize(6)}px 0;font-weight:600;">$1</h3>`);
     html = html.replace(/\[left\]([\s\S]*?)\[\/left\]/gi, '<div style="text-align:left">$1</div>');
     html = html.replace(/\[center\]([\s\S]*?)\[\/center\]/gi, '<div style="text-align:center">$1</div>');
+    html = html.replace(/\[c\]([\s\S]*?)\[\/c\]/gi, '<div style="text-align:center">$1</div>');
     html = html.replace(/\[right\]([\s\S]*?)\[\/right\]/gi, '<div style="text-align:right">$1</div>');
     html = html.replace(/\[url=(.*?)\]([\s\S]*?)\[\/url\]/gi, (_match, url, value) => {
         const href = safeUrl(url) || safeUrl(value) || "#";
